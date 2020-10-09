@@ -5,7 +5,7 @@ require "src/Brainly.php";
 use Brainly\Brainly;
 
 $query = $_GET['q'];
-$st = new Brainly($query);
+$st = new Brainly('Penemu Motor');
 $result = $st->exec();
 
 if (count($result) === 0) {
