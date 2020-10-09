@@ -4,5 +4,5 @@ $ch = curl_init('https://raw.githubusercontent.com/penggguna/QuranJSON/master/qu
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $upx = curl_exec($ch);
 $data = json_decode($upx,true);
-echo $data[0]['recitation'];
+echo $data[$surah]['recitation'];
 ?>
