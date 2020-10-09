@@ -368,4 +368,3 @@ query SearchQuery($query: String!, $first: Int!, $after: ID) {
 }
 GRAPHQL_PAYLOAD;
 }
-?>
