@@ -6,5 +6,6 @@ $upx = curl_exec($ch);
 $data = json_decode($upx,true);
 print_r($upx);
 echo "<br>";
+print_r($data);
  echo $upx['results']['video'][0]['title']."|".$upx['results']['video'][0]['url'];
 ?>
