@@ -5,6 +5,5 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $upx = curl_exec($ch);
 $data = json_decode($upx,true);
 echo "<br>";
-print_r($data);
- echo $data['results']['video'][0]['title']."|".$data['results']['video'][0]['url'];
+ echo $data['results'][0]['video']['title']."|".$data['results'][0]['video']['url'];
 ?>
