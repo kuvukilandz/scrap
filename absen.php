@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set("Asia/Bangkok");
 if($_GET['matkul'] == "besok") {
     function hari_ini(){
 	$hari = date ("D");
