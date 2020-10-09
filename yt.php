@@ -4,7 +4,5 @@ $ch = curl_init('http://youtube-scrape.herokuapp.com/api/search?q=Alan%20Walker%
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $upx = curl_exec($ch);
 $data = json_decode($upx,true);
-print_r($data);
-print_r($upx);
- echo $data['results']['video']['title']."|".$data['results']['video']['url'];
+ echo $upx['results']['video']['title']."|".$upx['results']['video']['url'];
 ?>
