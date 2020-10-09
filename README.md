@@ -1,2 +1,2 @@
-# scrap
-Bodo Amat
+# SCRAP
+AKU CINTA ALLAH
