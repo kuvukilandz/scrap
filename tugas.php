@@ -3,16 +3,16 @@ echo"
 *[+] TUGAS KELAS A [+] \n
 ------------------------ \n
 1. Phonology \n
-  - Mencari Definisi Phonlogy
+  - _Mencari Definisi Phonlogy_ \n
 ------------------------ \n
 \n
 ------------------------ \n
 2. Bahasa Indonesia \n
-  - Mencari 15 Pengertin Bahasa Menurut Para Ahli \n
+  - _Mencari 15 Pengertin Bahasa Menurut Para Ahli_ \n
 ------------------------ \n
 
 
 
 
-";
+*";
 ?>
