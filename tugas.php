@@ -1,13 +1,13 @@
 <?php
 echo"
-*[+] TUGAS KELAS A [+] 
+*[+] TUGAS KELAS A [+]*
 ------------------------
-1. Phonology
+*1. Phonology*
   - _Mencari Definisi Phonlogy_
 ------------------------ 
 ------------------------ 
-2. Bahasa Indonesia 
+*2. Bahasa Indonesia*
   - _Mencari 15 Pengertin Bahasa Menurut Para Ahli_ 
 ------------------------ 
-*";
+";
 ?>
