@@ -12,9 +12,9 @@ $hasil = json_decode($up,true);
 $menit = $data['results'][0]['video']['duration'];
 $filter = str_replace(":","",$menit);
  if($filter >= 5){
-  echo "Ada Jam";
+  $waktu = $menit;
  }else{
-  echo " Tidak ada jam";
+  $waktu = "1:'.$menit;
  }
-// echo $hasil['title']."^".$hasil['linkVideo']."^".$menit;
+// echo $hasil['title']."^".$hasil['linkVideo']."^".$waktu;
 ?>
