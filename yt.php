@@ -10,5 +10,11 @@ curl_setopt($cht, CURLOPT_RETURNTRANSFER, true);
 $up = curl_exec($cht);
 $hasil = json_decode($up,true);
 $menit = $data['results'][0]['video']['duration'];
-echo $hasil['title']."^".$hasil['linkVideo']."^".$menit;
+$filter = str_replace(":","",$menit);
+ if($filter >= 5){
+  echo "Ada Jam";
+ }else{
+  echo " Tidak ada jam";
+ }
+// echo $hasil['title']."^".$hasil['linkVideo']."^".$menit;
 ?>
