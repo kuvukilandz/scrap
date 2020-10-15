@@ -9,5 +9,5 @@ $cht = curl_init('http://scrap.terhambar.com/yt?link='.$url.'');
 curl_setopt($cht, CURLOPT_RETURNTRANSFER, true);
 $up = curl_exec($cht);
 $hasil = json_decode($up,true);
-echo $hasil['title']."^".$hasil['linkVideo'];
+echo $hasil['title']."^".$hasil['linkVideo']."^".$hasil['duration']['inText'];
 ?>
