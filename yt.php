@@ -12,9 +12,9 @@ $hasil = json_decode($up,true);
 $menit = $data['results'][0]['video']['duration'];
 $filter = str_replace(":","",$menit);
  if($filter >= 5){
-  $waktu = $menit;
+   $waktu = "1:".$menit;
  }else{
-  $waktu = "1:".$menit;
+   $waktu = $menit;
  }
  echo $hasil['title']."^".$hasil['linkVideo']."^".$waktu;
 ?>
