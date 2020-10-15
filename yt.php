@@ -10,12 +10,5 @@ curl_setopt($cht, CURLOPT_RETURNTRANSFER, true);
 $up = curl_exec($cht);
 $hasil = json_decode($up,true);
 $menit = $data['results'][0]['video']['duration'];
-$filter = str_replace(":","",$menit);
- if($filter >= 4){
-   $waktu = $menit;
- }else{
-   $waktu = "1:".$menit;
- }
-echo $waktu;
-// echo $hasil['title']."^".$hasil['linkVideo']."^".$waktu;
+echo $hasil['title']."^".$hasil['linkVideo']."^".$menit;
 ?>
