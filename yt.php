@@ -12,10 +12,10 @@ $hasil = json_decode($up,true);
 $menit = $data['results'][0]['video']['duration'];
 $filter = str_replace(":","",$menit);
  if($filter >= 4){
-    echo "JAM";
+    echo "MENIT";
    // $waktu = "1:".$menit;
  }else{
-  echo "MENIT";
+  echo "JAM";
   // $waktu = $menit;
  }
 echo $waktu;
