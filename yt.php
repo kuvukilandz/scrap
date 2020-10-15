@@ -11,7 +11,7 @@ $up = curl_exec($cht);
 $hasil = json_decode($up,true);
 $menit = $data['results'][0]['video']['duration'];
 $filter = str_replace(":","",$menit);
-   if($filter >= 4){
+   if($filter > "4"){
     echo "MENIT";
    }else{
     echo "JAM";
