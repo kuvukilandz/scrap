@@ -12,5 +12,5 @@ $hasil = json_decode($up,true);
 $menit = str_replace(',','',$hasil['duration']['minute']);
 echo $hasil['title']."^".$hasil['linkVideo']."^".$menit;
 
-echo $hasil['duration']['inText'];
+echo "(".$hasil['duration']['inText'].")";
 ?>
