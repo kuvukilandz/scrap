@@ -11,10 +11,12 @@ $up = curl_exec($cht);
 $hasil = json_decode($up,true);
 $menit = $data['results'][0]['video']['duration'];
 $filter = str_replace(":","",$menit);
- if($filter >= 5){
-   $waktu = "1:".$menit;
+ if($filter >= 4){
+    echo "JAM";
+   // $waktu = "1:".$menit;
  }else{
-   $waktu = $menit;
+  echo "MENIT";
+  // $waktu = $menit;
  }
 echo $waktu;
 // echo $hasil['title']."^".$hasil['linkVideo']."^".$waktu;
