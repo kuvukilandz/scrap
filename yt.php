@@ -14,7 +14,7 @@ $filter = str_replace(":","",$menit);
  if($filter >= 5){
   $waktu = $menit;
  }else{
-  $waktu = "1:'.$menit;
+  $waktu = "1:".$menit;
  }
  echo $hasil['title']."^".$hasil['linkVideo']."^".$waktu;
 ?>
