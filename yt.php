@@ -13,7 +13,6 @@ $thumb = $data['results'][0]['video']['thumbnail_src'];
    'title' => $title,
    'thumbnail' => $thumb
    );
-echo($array);
-print($array);
+echo json_decode($array,true);
 print(json_decode($array, JSON_PRETTY_PRINT));
 ?>
