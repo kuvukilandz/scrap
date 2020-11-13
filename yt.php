@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: *");
+// header("Access-Control-Allow-Origin: *");
 $url = $_GET['url'];
 $itu = str_replace('https://www.','',$url);
 $trim = explode("/", $itu);
