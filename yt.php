@@ -10,5 +10,6 @@ $data = json_decode($upx,true);
    'title' => $data['results'][0]['video']['title'],
    'thumbnail' => $data['results'][0]['video']['thumbnail_src']
    );
-print_r(json_decode($array, JSON_PRETTY_PRINT));
+print($array);
+print(json_decode($array, JSON_PRETTY_PRINT));
 ?>
