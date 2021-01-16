@@ -1,4 +1,5 @@
 <?php
+header('Content-Type:appliaction/json');
 $ua = urlencode($_GET['ua']);
 $exec = 'http://api.userstack.com/detect?access_key=61a25c85e1d92c339a513bedf298918b&ua='.$ua;
 $ch = curl_init();
