@@ -1,6 +1,6 @@
 <?php
 $ua = urlencode($_GET['ua']);
-$exec = "https://api.userstack.com/detect?access_key=61a25c85e1d92c339a513bedf298918b&ua=$ua";
+$exec = "http://api.userstack.com/detect?access_key=61a25c85e1d92c339a513bedf298918b&ua=$ua";
 $ch = curl_init();
 curl_setopt($ch,CURLOPT_URL,$exec);
 curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
