@@ -7,5 +7,6 @@ curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch,CURLOPT_CONNECTTIMEOUT ,3);
 curl_setopt($ch,CURLOPT_TIMEOUT, 20);
 $response = curl_exec($ch);
+echo '<pre>';
 print_r($response);
 ?>
