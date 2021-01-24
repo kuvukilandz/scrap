@@ -13,12 +13,12 @@ $data = json_decode($res, true);
 $nama = $data['name'];
 $os = $data['os']['name'];
 $browser = $data['browser']['name'];
-echo $nama.'|'.$os.'|'.$browser;
-// $hasil = array(
-//   'device' => $nama,
-//   'os' => $os,
-//   'browser' => $browser
-//   );
-// $result = json_encode($hasil, JSON_PRETTY_PRINT);
-// print_r($result);
+// echo $nama.'|'.$os.'|'.$browser;
+$hasil = array(
+  'device' => $nama,
+  'os' => $os,
+  'browser' => $browser
+  );
+$result = json_encode($hasil, JSON_PRETTY_PRINT);
+print_r($result);
 ?>
