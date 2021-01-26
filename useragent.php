@@ -2,7 +2,7 @@
 header('Access-Control-Allow-Origin:*');
 header('Access-Control-Allow-Headers:*');
 $ua = urlencode($_GET['ua']);
-$exec = 'http://api.userstack.com/detect?access_key=61a25c85e1d92c339a513bedf298918b&ua='.$ua;
+$exec = 'http://api.userstack.com/detect?access_key=81c31b78fbacfc3c363ad15df9df75b0&ua='.$ua;
 $ch = curl_init();
 curl_setopt($ch,CURLOPT_URL,$exec);
 curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
